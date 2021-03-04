@@ -24,7 +24,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run test:ci"
+      "pre-push": "jest --passWithNoTests --silent --noStackTrace --runInBand --coverage"
     }
   },
   "scripts": {
