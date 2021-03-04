@@ -2,7 +2,7 @@
   "name": "ts-curse",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Paulo Rodrigue <pcqrodrigues@gmail.com>",
+  "author": "Paulo Rodrigues <pcqrodrigues@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.20",
@@ -32,7 +32,7 @@
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "yarn test --watch -C jest-unit-config.js",
     "test:integration": "yarn test --watch -C jest-integration-config.js",
-    "test:staged": "yarn test --findRelatedTests",
+    "test:staged": "yarn test --findRelatedTests --coverage",
     "test:ci": "yarn test --coverage"
   }
 }
