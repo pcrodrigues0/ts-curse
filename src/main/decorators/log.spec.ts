@@ -1,11 +1,11 @@
 import { LogControllerDecorator } from './log'
-import { Controller, HttpResponse, httpRequest } from '../../presentation/protocols'
+import { Controller, HttpResponse, HttpRequest } from '../../presentation/protocols'
 import { serverError } from '../../presentation/helpers/http-helper'
 import { LogErrorRepository } from '../../data/protocols/log-error-repository'
 
 const makeController = (): Controller => {
   class ControllerStub implements Controller {
-    async handle (httpRequest: httpRequest): Promise<HttpResponse> {
+    async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
       const httpResponse = {
         statusCode: 200,
         body: {

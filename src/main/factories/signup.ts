@@ -11,6 +11,5 @@ export const makeSignUpController = (): SignUpController => {
   const accountMongoRepository = new AccountMongoRepository()
   const dbAddAccount = new DBAddAccount(bcryptAdapter, accountMongoRepository)
   const signUpController = new SignUpController(emailValidatorAdapter, dbAddAccount)
-  // @ts-expect-error
   return new LogControllerDecorator(signUpController)
 }
